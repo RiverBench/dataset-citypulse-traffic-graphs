@@ -35,23 +35,26 @@ Full documentation for all versions can be found [on the website](https://w3id.o
         - **<abbr title="A name for some thing.">Name</abbr>**: Piotr Sowiński
         - **<abbr title="A short informal nickname characterising an agent (includes login identifiers, IRC and other chat nicknames).">Nickname</abbr>**: Ostrzyciel
         - **<abbr title="A homepage for some thing.">Homepage</abbr>**:     
-            - [https://github.com/Ostrzyciel](https://github.com/Ostrzyciel)
-            - [https://orcid.org/0000-0002-2543-9461](https://orcid.org/0000-0002-2543-9461)
+            -  ([https://orcid.org/0000-0002-2543-9461](https://orcid.org/0000-0002-2543-9461))
+            - Ostrzyciel ([https://github.com/Ostrzyciel](https://github.com/Ostrzyciel))
         - **<abbr title="A description of the subject resource.">Comment</abbr>**: Processing the dataset
 - **<abbr title="A legal document giving official permission to do something with the resource.">License</abbr>**: [https://spdx.org/licenses/CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0)
+- **<abbr title="A related resource from which the described resource is derived.">Source</abbr>**: 
+    - [http://dx.doi.org/10.1007/978-3-319-25010-6_25](http://dx.doi.org/10.1007/978-3-319-25010-6_25)
+    - [http://iot.ee.surrey.ac.uk:8080/datasets.html#traffic](http://iot.ee.surrey.ac.uk:8080/datasets.html#traffic)
 - **<abbr title="Date of formal issuance of the resource.">Date Issued</abbr>**: 2023-05-01
-- **<abbr title="Date on which the resource was changed.">Date Modified</abbr>**: 2023-05-02
+- **<abbr title="Date on which the resource was changed.">Date Modified</abbr>**: 2023-05-08
 - **<abbr title="A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.">Landing page</abbr>**: [citypulse-traffic-graphs (dev)](https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev)
-- **<abbr title="An established standard to which the described resource conforms.">Conforms To</abbr>**: <abbr title="Ontology for describing datasets and profiles in the RiverBench benchmark suite.">RiverBench metadata ontology</abbr> ([https://w3id.org/riverbench/schema/metadata](https://w3id.org/riverbench/schema/metadata))
+- **<abbr title="An established standard to which the described resource conforms.">Conforms To</abbr>**: Metadata ([https://w3id.org/riverbench/schema/metadata](https://w3id.org/riverbench/schema/metadata))
 
 ## Technical metadata
 
 - **<abbr title="Indicates the type of contents of each stream element">Has stream element type</abbr>**: <abbr title="Graph streams are a special case of quad streams, where each element contains exactly one named RDF graph.">Graphs</abbr> ([rb:graphs](https://w3id.org/riverbench/schema/metadata#graphs))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 4,382,599
-- **Has stream element split**: 
+- **<abbr title="Indicates how the stream was split into elements.">Has stream element split</abbr>**: 
     - **Type**:     
-        - Stream elements split by time ([rb:TimeStreamElementSplit](https://w3id.org/riverbench/schema/metadata#TimeStreamElementSplit))
-        - Stream elements split by topic ([rb:TopicStreamElementSplit](https://w3id.org/riverbench/schema/metadata#TopicStreamElementSplit))
+        - <abbr title="The elements correspond to different instants or intervals of time.">Stream elements split by time</abbr> ([rb:TimeStreamElementSplit](https://w3id.org/riverbench/schema/metadata#TimeStreamElementSplit))
+        - <abbr title="The elements correspond to different topics/subjects in the dataset.">Stream elements split by topic</abbr> ([rb:TopicStreamElementSplit](https://w3id.org/riverbench/schema/metadata#TopicStreamElementSplit))
     - **<abbr title="The IRI of the property that is used in the stream to denote time at which the event occured.">Has temporal property</abbr>**: [http://purl.org/NET/c4dm/timeline.owl#at](http://purl.org/NET/c4dm/timeline.owl#at)
     - **<abbr title="A description of the subject resource.">Comment</abbr>**: Each element corresponds to one measurement made by a traffic sensor.
 - **<abbr title="Indicates that the dataset uses an ontology. The object must be a resource, but it doesn't neccesarily have to be an OWL ontology.">Uses ontology</abbr>**: 
