@@ -72,47 +72,20 @@ Full documentation for all versions can be found [on the website](https://w3id.o
 
 ## Distributions
 
-### <a name="flat-100k"></a> 100K elements flat distribution
+### <a name="stream-full"></a> Full graph stream distribution
 
-- **<abbr title="A name given to the resource.">Title</abbr>**: 100K elements flat distribution
-- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: flat-100k
-- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `flat_100K.nq.gz`
+- **<abbr title="A name given to the resource.">Title</abbr>**: Full graph stream distribution
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: stream-full
+- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: stream_full.tar.gz
 - **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
-    - <abbr title="The dataset is distributed as a single flat file.">Flat distribution</abbr> ([rb:flatDistribution](https://w3id.org/riverbench/schema/metadata#flatDistribution))
-    - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
-- **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 100,000
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 39.69 MB
-- **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/n-quads
+    - <abbr title="A full distribution, including all data in the dataset.">Full distribution</abbr> ([rb:fullDistribution](https://w3id.org/riverbench/schema/metadata#fullDistribution))
+    - <abbr title="The dataset is distributed as a stream of named RDF graphs.">Graph stream distribution</abbr> ([rb:graphStreamDistribution](https://w3id.org/riverbench/schema/metadata#graphStreamDistribution))
+- **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 4,382,599
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 902.24 MB
+- **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/trig
+- **<abbr title="The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.">Packaging format</abbr>**: application/tar
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
-- **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/flat_100K.nq.gz](https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/flat_100K.nq.gz)
-
-### <a name="flat-10k"></a> 10K elements flat distribution
-
-- **<abbr title="A name given to the resource.">Title</abbr>**: 10K elements flat distribution
-- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: flat-10k
-- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `flat_10K.nq.gz`
-- **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
-    - <abbr title="The dataset is distributed as a single flat file.">Flat distribution</abbr> ([rb:flatDistribution](https://w3id.org/riverbench/schema/metadata#flatDistribution))
-    - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
-- **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 10,000
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 3.96 MB
-- **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/n-quads
-- **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
-- **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/flat_10K.nq.gz](https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/flat_10K.nq.gz)
-
-### <a name="flat-1m"></a> 1M elements flat distribution
-
-- **<abbr title="A name given to the resource.">Title</abbr>**: 1M elements flat distribution
-- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: flat-1m
-- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `flat_1M.nq.gz`
-- **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
-    - <abbr title="The dataset is distributed as a single flat file.">Flat distribution</abbr> ([rb:flatDistribution](https://w3id.org/riverbench/schema/metadata#flatDistribution))
-    - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
-- **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 1,000,000
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 395.98 MB
-- **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/n-quads
-- **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
-- **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/flat_1M.nq.gz](https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/flat_1M.nq.gz)
+- **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/stream_full.tar.gz](https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/stream_full.tar.gz)
 
 ### <a name="flat-full"></a> Full flat distribution
 
@@ -128,6 +101,35 @@ Full documentation for all versions can be found [on the website](https://w3id.o
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
 - **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/flat_full.nq.gz](https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/flat_full.nq.gz)
 
+### <a name="stream-1m"></a> 1M elements graph stream distribution
+
+- **<abbr title="A name given to the resource.">Title</abbr>**: 1M elements graph stream distribution
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: stream-1m
+- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `stream_1M.tar.gz`
+- **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
+    - <abbr title="The dataset is distributed as a stream of named RDF graphs.">Graph stream distribution</abbr> ([rb:graphStreamDistribution](https://w3id.org/riverbench/schema/metadata#graphStreamDistribution))
+    - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
+- **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 1,000,000
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 204.33 MB
+- **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/trig
+- **<abbr title="The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.">Packaging format</abbr>**: application/tar
+- **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
+- **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/stream_1M.tar.gz](https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/stream_1M.tar.gz)
+
+### <a name="flat-1m"></a> 1M elements flat distribution
+
+- **<abbr title="A name given to the resource.">Title</abbr>**: 1M elements flat distribution
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: flat-1m
+- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `flat_1M.nq.gz`
+- **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
+    - <abbr title="The dataset is distributed as a single flat file.">Flat distribution</abbr> ([rb:flatDistribution](https://w3id.org/riverbench/schema/metadata#flatDistribution))
+    - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
+- **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 1,000,000
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 395.98 MB
+- **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/n-quads
+- **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
+- **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/flat_1M.nq.gz](https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/flat_1M.nq.gz)
+
 ### <a name="stream-100k"></a> 100K elements graph stream distribution
 
 - **<abbr title="A name given to the resource.">Title</abbr>**: 100K elements graph stream distribution
@@ -137,11 +139,25 @@ Full documentation for all versions can be found [on the website](https://w3id.o
     - <abbr title="The dataset is distributed as a stream of named RDF graphs.">Graph stream distribution</abbr> ([rb:graphStreamDistribution](https://w3id.org/riverbench/schema/metadata#graphStreamDistribution))
     - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 100,000
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 20.35 MB
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 20.36 MB
 - **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/trig
 - **<abbr title="The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.">Packaging format</abbr>**: application/tar
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
 - **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/stream_100K.tar.gz](https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/stream_100K.tar.gz)
+
+### <a name="flat-100k"></a> 100K elements flat distribution
+
+- **<abbr title="A name given to the resource.">Title</abbr>**: 100K elements flat distribution
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: flat-100k
+- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `flat_100K.nq.gz`
+- **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
+    - <abbr title="The dataset is distributed as a single flat file.">Flat distribution</abbr> ([rb:flatDistribution](https://w3id.org/riverbench/schema/metadata#flatDistribution))
+    - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
+- **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 100,000
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 39.69 MB
+- **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/n-quads
+- **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
+- **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/flat_100K.nq.gz](https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/flat_100K.nq.gz)
 
 ### <a name="stream-10k"></a> 10K elements graph stream distribution
 
@@ -158,33 +174,17 @@ Full documentation for all versions can be found [on the website](https://w3id.o
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
 - **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/stream_10K.tar.gz](https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/stream_10K.tar.gz)
 
-### <a name="stream-1m"></a> 1M elements graph stream distribution
+### <a name="flat-10k"></a> 10K elements flat distribution
 
-- **<abbr title="A name given to the resource.">Title</abbr>**: 1M elements graph stream distribution
-- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: stream-1m
-- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `stream_1M.tar.gz`
+- **<abbr title="A name given to the resource.">Title</abbr>**: 10K elements flat distribution
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: flat-10k
+- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `flat_10K.nq.gz`
 - **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
-    - <abbr title="The dataset is distributed as a stream of named RDF graphs.">Graph stream distribution</abbr> ([rb:graphStreamDistribution](https://w3id.org/riverbench/schema/metadata#graphStreamDistribution))
+    - <abbr title="The dataset is distributed as a single flat file.">Flat distribution</abbr> ([rb:flatDistribution](https://w3id.org/riverbench/schema/metadata#flatDistribution))
     - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
-- **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 1,000,000
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 205.29 MB
-- **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/trig
-- **<abbr title="The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.">Packaging format</abbr>**: application/tar
+- **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 10,000
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 3.96 MB
+- **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/n-quads
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
-- **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/stream_1M.tar.gz](https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/stream_1M.tar.gz)
-
-### <a name="stream-full"></a> Full graph stream distribution
-
-- **<abbr title="A name given to the resource.">Title</abbr>**: Full graph stream distribution
-- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: stream-full
-- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: stream_full.tar.gz
-- **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
-    - <abbr title="A full distribution, including all data in the dataset.">Full distribution</abbr> ([rb:fullDistribution](https://w3id.org/riverbench/schema/metadata#fullDistribution))
-    - <abbr title="The dataset is distributed as a stream of named RDF graphs.">Graph stream distribution</abbr> ([rb:graphStreamDistribution](https://w3id.org/riverbench/schema/metadata#graphStreamDistribution))
-- **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 4,382,599
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 902.25 MB
-- **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/trig
-- **<abbr title="The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.">Packaging format</abbr>**: application/tar
-- **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
-- **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/stream_full.tar.gz](https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/stream_full.tar.gz)
+- **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/flat_10K.nq.gz](https://w3id.org/riverbench/datasets/citypulse-traffic-graphs/dev/files/flat_10K.nq.gz)
 
