@@ -7,6 +7,7 @@
 @prefix rbt: <https://w3id.org/riverbench/schema/theme#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix stax: <https://w3id.org/stax/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # This file contains the manually written metadata for the dataset.
@@ -54,7 +55,15 @@
     ;
     # Set to number of stream elements in the dataset
     rb:hasStreamElementCount 4382599 ;
-    rb:hasStreamElementType rb:graphs ;
+    stax:hasStreamTypeUsage [
+        a stax:RdfStreamTypeUsage ;
+        rdfs:comment "The dataset can be viewed as a stream of RDF datasets, each containing exactly one named graph corresponding to one measurement made by a traffic sensor. The named graphs are annotated with the timestamp property."@en ;
+        stax:hasStreamType stax:timestampedNamedGraphStream
+    ] , [
+        a stax:RdfStreamTypeUsage ;
+        rdfs:comment "The dataset can be viewed as a flattened stream of quads."@en ;
+        stax:hasStreamType stax:flatQuadStream
+    ] ;
     rb:hasStreamElementSplit [
         a rb:TimeStreamElementSplit, rb:TopicStreamElementSplit ;
         rb:hasTemporalProperty <http://purl.org/NET/c4dm/timeline.owl#at> ;
