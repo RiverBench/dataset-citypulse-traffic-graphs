@@ -46,7 +46,8 @@
         eurovoc:6030, # data collection
         eurovoc:3127, # road traffic
         eurovoc:c_d59e7560, # smart city
-        eurovoc:3107 # traffic control
+        eurovoc:3107, # traffic control
+        eurovoc:c_b12a760a # Internet of Things
     ;
 
     # Technical metadata
